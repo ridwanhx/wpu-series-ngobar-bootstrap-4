@@ -1,0 +1,61 @@
+@font-face {
+	font-family: 'montserrat';
+	src: url('../fonts/Montserrat.ttf') format('truetype');
+}
+
+body {
+	font-family: montserrat, helvetica, sans-serif;
+}
+
+section {
+	min-height: 480px;
+}
+
+.jumbotron {
+	overflow: hidden;
+	background-image: url(../img/header-baru.png);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: 0 -120px;
+}
+
+.jumbotron img {
+	width: 25%;
+	filter: brightness(112%) saturate(114%);
+}
+
+.display-4, .lead {
+	color: #eaeaea;
+	text-shadow: 1px 1px 10px rgba(0,0,0,.5);
+}
+
+.form-group textarea {
+	height: 82px;
+}
+
+.portfolio .card {
+	opacity: 0;
+	transform: translate(0, -40px);
+	transition: .5s;
+}
+
+.portfolio .card.muncul {
+	opacity: 1;
+	transform: translate(0,0);
+}
+
+.pKiri, .pKanan {
+	opacity: 0;
+	transform: translate(-50px, 0);
+	transition: 1s;
+}
+
+.pKanan {
+	transform: translate(50px, 0);
+}
+
+.pKiri.pMuncul, .pKanan.pMuncul {
+	opacity: 1;
+	transform: translate(0,0);
+}
